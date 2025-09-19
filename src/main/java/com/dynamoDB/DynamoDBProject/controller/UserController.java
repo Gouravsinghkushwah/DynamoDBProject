@@ -44,4 +44,12 @@ public class UserController {
         service.deleteUser(id);
         return ResponseEntity.ok("User deleted successfully");
     }
+
+    // this line for testing purpose for merge
+
+    @GetMapping
+    public String testMerge() {
+        return "Merge successful!";
+    }
 }
+
